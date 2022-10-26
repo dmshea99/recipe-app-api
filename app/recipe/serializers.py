@@ -52,10 +52,6 @@ class RecipeSerializer(serializers.ModelSerializer):
         return instance
 
 
-
-
-
-
 class RecipeDetailSerializer(RecipeSerializer):
     """Serializer for recipe detail view."""
 
