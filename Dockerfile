@@ -28,8 +28,14 @@ RUN python -m venv /py && \
   django-user && \
   mkdir -p /app/vol/web/media && \
   mkdir - p /app/vol/web/static && \
+  mkdir - p /app/vol/web/media/uploads/recipe && \
   chown -R django-user:django-user /app/vol && \
   chmod -R 755 /app/vol && \
+  mkdir -p /vol/web/media && \
+  mkdir - p /vol/web/static && \
+  mkdir - p /vol/web/media/uploads/recipe && \
+  chown -R django-user:django-user /vol && \
+  chmod -R 755 /vol && \
   chmod -R +x /scripts
 
 USER django-user
